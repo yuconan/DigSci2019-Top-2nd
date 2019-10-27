@@ -20,3 +20,23 @@
 **1.1 ProSolution1** : 利用TF-IDF计算相似度召回3篇论文；   
 **1.2 ProSolution2** : 利用DOTA-EmbeddingVector计算相似度召回3篇论文  
 **2、SortPart**：利用BERT利用Encoder描述段落和候选论文，计算相似度；
+
+**任务背景**  
+科学研究已经成为现代社会创新的主要动力。大量科研数据的积累也让我们可以理解和预测科研发展，并能用来指导未来的研究。论文是人类最前沿知识的媒介，因此如果可以理解论文中的数据，可以极大地扩充计算机理解知识的能力和范围。  
+在论文中，作者经常会引用其他论文，并对被引论文做出对应描述。如果我们可以自动地理解、识别描述对应的被引论文，不仅可以加深对科研脉络的理解，还能在科研知识图谱、科研自动问答系统和自动摘要系统等领域有所进步。  
+
+**任务描述**  
+本次比赛将提供一个论文库（约含20万篇论文），同时提供对论文的描述段落，来自论文中对同类研究的介绍。参赛选手需要为描述段落匹配三篇最相关的论文。
+
+例子：
+
+描述段落：
+
+An efficient implementation based on BERT [1] and graph neural network (GNN) [2] is introduced.
+
+相关论文：
+
+[1] BERT: Pre-training of deep bidirectional transformers for language understanding.
+
+[2] Relational inductive biases, deep learning, and graph networks.
+
