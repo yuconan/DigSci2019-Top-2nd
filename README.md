@@ -2,6 +2,8 @@
 ###  作者 : DOTA  
 #### 分数( MAP@3 ):0.53733 (Rank2) 
 
+### 知乎：https://zhuanlan.zhihu.com/p/88257675
+
 **方法** :   
 >在解决本问题时，我借鉴了推荐算法的思想，将问题拆解了两部分——召回和排序。在召回阶段，使用了两种方式，其一是利用Wrod2Vec和TFIDF方法，将描述段落利用Word2Vec得到每个词的词向量，同时对句子中的词使用TF-IDF为权重进行加权得到Sentence Embedding，同时为了得到更好的效果，这里做了一个改进，即使用Smooth Inverse Frequency代替TFIDF作为每个词的权重；其二是利用TFIDF得到Sentence Embedding。两种方法各自计算余弦相似度得到3篇论文，去重后召回集中每个段落有3-6篇不等的召回论文。  
 在排序阶段，我们利用BERT对描述段落Description和论文文本PaperText组成句子对（Description，PaperText）进行编码，在输出层经过Dense和Softmax层后得到概率值后排序。
