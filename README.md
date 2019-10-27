@@ -1,6 +1,4 @@
-# DigSci2019-Top-2nd
-
-# DigSci2019 科学数据挖掘大赛   Final Top-2
+# DigSci2019 科学数据挖掘大赛  Final Top-2
 ###  作者 : DOTA  
 #### 分数( MAP@3 ):0.53733 (Rank2) 
 
